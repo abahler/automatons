@@ -1,20 +1,24 @@
-import argparse                 # For parsing command-line arguments
+# import argparse                 # For parsing command-line arguments
 import os                       # For executing the cd and mkdir commands
 from shutil import copyfile     # For copying files from source to destination
 
-parser = argparse.ArgumentParser()
+# parser = argparse.ArgumentParser()
 
 # Register your arguments
-parser.add_argument('--company', help='The name of the company you are applying to')
-parser.add_argument('--title', help='The job title of the open position')
+# parser.add_argument('--company', help='The name of the company you are applying to')
+# parser.add_argument('--title', help='The job title of the open position')
+
+# TODO: prompt the user for the Company and Job Title
+company = input('Enter the company name: ')
+job_title = input('Enter the job title: ')
 
 # Pull the user input into variables
-args = parser.parse_args()
-job_title = args.title
-company = args.company
+# args = parser.parse_args()
+# job_title = args.title
+# company = args.company
 # Replace spaces with nothing (smoosh words together)
 # and strip any period off the end (i.e. "Widgets Inc.")
-company_no_spaces = company.replace(' ', '').strip('.');
+company_no_spaces = company.replace(' ', '').strip('.')
 
 # This is the more modern way to do variable interpolation, as opposed to `print("Hello %s" % "world")`
 print(f'Creating the specified files for the {job_title} position at {company}')
