@@ -24,8 +24,8 @@ os.mkdir(newfolder)
 os.chdir(resume_directory)
 # ...and copy files to the new folder you created
 # Copy resume
-copyfile('./Alex_Bahler_resume.docx', f'{job_apps_directory}/{newfolder}/AlexBahler_{company_no_spaces}_resume.docx')
+copyfile('./Alex_Bahler_resume.docx', f'{job_apps_directory}/{newfolder}/Alex_Bahler_{company_no_spaces}_resume.docx')
 # Copy cover letter
-copyfile('./Alex_Bahler_coverletter.docx', f'{job_apps_directory}/{newfolder}/AlexBahler_{company_no_spaces}_coverletter.docx')
+copyfile('./Alex_Bahler_coverletter.docx', f'{job_apps_directory}/{newfolder}/Alex_Bahler_{company_no_spaces}_coverletter.docx')
 
 print('End of script!')
